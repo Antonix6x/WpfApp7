@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp7"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Nadaj Przesyłkę" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <GroupBox Header="Dane Adresowe" Margin="420,60,23,60" RenderTransformOrigin="0.573,0.552" BorderBrush="#FF010304"/>
+        <GroupBox Header="Rodzaj przesyłki" Margin="27,60,455,237" RenderTransformOrigin="0.573,0.552" BorderBrush="#FF010304"/>
+        <RadioButton Content="Pocztówka" HorizontalAlignment="Left" Margin="41,82,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
+        <RadioButton Content="Paczka" HorizontalAlignment="Left" Margin="41,144,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
+        <RadioButton Content="List" HorizontalAlignment="Left" Margin="41,109,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
+        <Button Content="Sprawdź cenę" HorizontalAlignment="Left" Margin="27,0,0,0" VerticalAlignment="Center" Width="318" Height="30" Background="#FF47D1FF"/>
+        <TextBox x:Name="cena" HorizontalAlignment="Left" Margin="225,274,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" Height="40" Background="LightGray" FontWeight="Bold" FontSize="14"/>
+
+
 
     </Grid>
 </Window>
