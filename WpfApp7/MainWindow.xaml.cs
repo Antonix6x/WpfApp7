@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Windows;
+using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -40,23 +41,28 @@ namespace WpfApp7
         {
             if (pocztowka.IsChecked == true)
             {
-                Console.WriteLine("Cena: 1,5zł");
+                cena.Text = "Cena: 1zł";
+                obaz.Source = new BitmapImage(new Uri("/images.png", UriKind.Relative));
             }
-            if (list.IsChecked == true)
+            else if (list.IsChecked == true)
             {
-                
-                    Console.WriteLine("Cena: 10zł");
-                
-                
-            }else
+
+                cena.Text = "cena: 10zł";
+                obaz.Source = new BitmapImage(new Uri("/list.jpg", UriKind.Relative));
+
+
+            }
+            else
             {
-                Console.WriteLine("Cena");
+                cena.Text = "cena: 12zł";
+                obaz.Source = new BitmapImage(new Uri("/paczka.png", UriKind.Relative));
             }
         }
 
         private void zatwierdz_Click(object sender, RoutedEventArgs e)
         {
-
+            int wynik;
+            //bool czyLiczba = int.TryParse(wynik.ToString(), out wynik);
         }
     }
 }

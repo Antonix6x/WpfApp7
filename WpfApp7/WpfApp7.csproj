@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <None Remove="images.png" />
+    <None Remove="list.jpg" />
     <None Remove="list.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="images.png" />
+    <Resource Include="list.jpg" />
     <Resource Include="list.png" />
   </ItemGroup>
 
