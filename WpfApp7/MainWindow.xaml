@@ -11,10 +11,10 @@
 
 
         <GroupBox Header="Rodzaj przesyłki" Margin="27,60,455,237" RenderTransformOrigin="0.573,0.552" BorderBrush="#FF010304"/>
-        <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" Margin="41,82,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
-        <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="41,144,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
-        <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="41,109,0,0" VerticalAlignment="Top" Height="22" Width="100"/>
-        <Button Content="Sprawdź cenę" HorizontalAlignment="Left" Margin="27,0,0,0" VerticalAlignment="Center" Width="318" Height="30" Background="#FF47D1FF" Click="Button_Click"/>
+        <RadioButton x:Name="pocztowka" Content="Pocztówka" HorizontalAlignment="Left" Margin="41,82,0,0" VerticalAlignment="Top" Height="22" Width="100" Checked="pocztowka_Checked"/>
+        <RadioButton x:Name="paczka" Content="Paczka" HorizontalAlignment="Left" Margin="41,144,0,0" VerticalAlignment="Top" Height="22" Width="100" Checked="paczka_Checked"/>
+        <RadioButton x:Name="list" Content="List" HorizontalAlignment="Left" Margin="41,109,0,0" VerticalAlignment="Top" Height="22" Width="100" Checked="list_Checked"/>
+        <Button x:Name="sprawdz_cene" Content="Sprawdź cenę" HorizontalAlignment="Left" Margin="27,0,0,0" VerticalAlignment="Center" Width="318" Height="30" Background="#FF47D1FF" Click="sprawdz_cene_Click"/>
         <TextBox x:Name="cena" IsEnabled="False" HorizontalAlignment="Left" Margin="225,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" Height="40" Background="LightGray" FontWeight="Bold" FontSize="14" AutomationProperties.IsRequiredForForm="True"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="27,255,0,0" VerticalAlignment="Top" Width="153" Source="/images.png"/>
         <TextBox HorizontalAlignment="Left" Margin="433,115,0,292" TextWrapping="Wrap" Width="308"/>
@@ -23,7 +23,7 @@
         <Label Content="Ulica z numerem" HorizontalAlignment="Left" Margin="433,82,0,0" VerticalAlignment="Top" Width="118" Height="28" FontSize="10"/>
         <Label Content="Miasto" HorizontalAlignment="Left" Margin="433,241,0,0" VerticalAlignment="Top" Width="118" Height="28" FontSize="10"/>
         <Label Content="Kod pocztowy" HorizontalAlignment="Left" Margin="433,157,0,0" VerticalAlignment="Top" Width="118" Height="28" FontSize="10"/>
-        <Button x:Name="zatwierdz" Content="ZATWIERDŹ" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="731" Height="35" Background="#FF47D1FF"/>
+        <Button x:Name="zatwierdz" Content="ZATWIERDŹ" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="731" Height="35" Background="#FF47D1FF" Click="zatwierdz_Click"/>
 
 
 

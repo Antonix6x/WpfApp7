@@ -20,5 +20,30 @@ namespace WpfApp7
         {
             InitializeComponent();
         }
+
+        private void pocztowka_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void list_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void paczka_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void sprawdz_cene_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
