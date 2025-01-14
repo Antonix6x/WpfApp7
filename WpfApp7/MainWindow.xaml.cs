@@ -38,7 +38,20 @@ namespace WpfApp7
 
         private void sprawdz_cene_Click(object sender, RoutedEventArgs e)
         {
-
+            if (pocztowka.IsChecked == true)
+            {
+                Console.WriteLine("Cena: 1,5zł");
+            }
+            if (list.IsChecked == true)
+            {
+                
+                    Console.WriteLine("Cena: 10zł");
+                
+                
+            }else
+            {
+                Console.WriteLine("Cena");
+            }
         }
 
         private void zatwierdz_Click(object sender, RoutedEventArgs e)
